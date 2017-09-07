@@ -1,0 +1,28 @@
+default: &default
+  auth:
+    protocol: http
+    # host: auth.backlogg.dev
+    host: backlogg-api-auth
+    port: 3003
+    # path:
+  users:
+    protocol: http
+    # host: users.backlogg.dev
+    host: backlogg-api-users
+    port: 3001
+    # path:
+  comments:
+    protocol: http
+    # host: comments.backlogg.dev
+    host: backlogg-api-comments
+    port: 3002
+    # path:
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
