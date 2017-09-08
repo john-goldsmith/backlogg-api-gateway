@@ -28,6 +28,7 @@ gem 'active_model_serializers', '~> 0.10.0'
 gem 'rack-cors'
 gem 'httparty'
 gem 'aws-sdk-rails' # See http://docs.aws.amazon.com/sdk-for-ruby/v2/developer-guide/rails.html
+gem 'swagger-blocks'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a
@@ -37,7 +38,6 @@ group :development, :test do
   # See https://buildtoship.com/integrate-rubocop-in-your-workflow/
   # See http://monksealsoftware.com/add-rubocop-to-every-rails-project/
   gem 'rubocop', require: false
-  gem 'swagger-blocks'
 end
 
 group :development do

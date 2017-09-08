@@ -7,6 +7,10 @@ class ApplicationController < ActionController::API
   # before_action :authenticate
   # attr_reader :current_user
 
+  # def index
+  #  This action is intentionally blank to disable WelcomeController#index and force a JSON 404 response
+  # end
+
   def logged_in?
     !!current_user
   end

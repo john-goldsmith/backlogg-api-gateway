@@ -4,6 +4,9 @@
 # See http://andrewberls.com/blog/post/api-versioning-with-rails-4
 
 Rails.application.routes.draw do
+
+  root to: 'application#index' # This action intentionally doesn't exist to disable WelcomeController#index and force a JSON 404 response
+
   resources :users, only: %i[index create show update destroy] do
     resources :comments, only: %i[index]
   end
